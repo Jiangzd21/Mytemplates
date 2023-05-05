@@ -4,12 +4,15 @@ description: zoterosettings
 
 # Zotero
 
-<pre data-title="Obsidian导出" data-overflow="wrap" data-line-numbers><code><strong>JournalArticle: [[[ 🌝> [!info]+ &#x3C;center>Metadata&#x3C;/center>🌝> 🌝>  |&#x3C;div style="width: 5em">Key&#x3C;/div>|Value| 🌝> |--:|:--| 
-</strong>🌝> |dateAdded| {{dateAdded}}&#x3C;br>{{collection}}|
+{% code title="Obsidian导出" overflow="wrap" lineNumbers="true" %}
+```
+journalArticle: [[[ 🌝> [!info]+ <center>Metadata</center>🌝> 🌝>  |<div style="width: 5em">Key</div>|Value| 🌝> |--:|:--| 
+🌝> |dateAdded| {{dateAdded}}<br>{{collection}}|
 🌝> |文献类型|{{itemType}}| 
 🌝> |标题|{{title}}| 
 🌝> |短标题|{{shortTitle}}| 
 🌝> |Pubtime|{{date}}|
+🌝> |publisher:: |{{publisher}}|
 🌝> |作者|{{creators}}| 
 🌝> |期刊名称|{{publicationTitle}}| 
 🌝> |DOI|{{DOI}}| 
@@ -21,12 +24,13 @@ description: zoterosettings
 🌝> |版权|{{rights}}| 
 🌝> |Extra | {{extra}}| 
 🌝> |rights|{{rights}}|
-🌝> |related| {{related}}|
 🌝> ^Metadata🌝🌝
-🌝> [!example]- &#x3C;center>本文标签&#x3C;/center>🌝> 🌝> `$=dv.current().file.tags`🌝🌝  
-🌝> [!quote]- &#x3C;center>Abstract&#x3C;/center>🌝> 🌝> {{abstractFormat}}🌝🌝]]],
+🌝> [!example]- <center>本文标签</center>🌝> 🌝> `$=dv.current().file.tags`🌝🌝  
+🌝> [!example]- <center>Related</center>🌝>🌝> {{related}} 🌝🌝  
+🌝> [!quote]- <center>Abstract</center>🌝> 🌝> {{abstractFormat}}🌝🌝]]],
 
-</code></pre>
+```
+{% endcode %}
 
 
 
